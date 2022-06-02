@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -c $(echo $CFILE) -o $(echo "$CFILE" | rev | cut -c 3- | rev | echo "$(cat -).o")
