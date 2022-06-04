@@ -12,6 +12,7 @@ int main(void)
 	int k;
 	int l;
 	int m;
+	int n;
 
 	for (i = 48; i < 58; i++)
 	{
@@ -19,24 +20,22 @@ int main(void)
 		{
 			for (k = i; k < 58; k++)
 			{
-				for (m = 0; m < 10; m++)
+				for (l = 48; l < 58; l++)
 				{
-					l = j + 1;
-					if (i == k && j == l)
+					m = (i * 10) + j;
+					n = (k * 10) + l;
+					if (m < n)
 					{
-						continue;
+						putchar(i);
+						putchar(j);
+						putchar(' ');
+						putchar(k);
+						putchar(l);
 					}
-					putchar(i);
-					putchar(j);
-					putchar(' ');
-					putchar(k);
-					putchar(l);
 					if (i == 57 && j == 56)
 						break;
 					putchar(',');
 					putchar(' ');
-					l += 1;
-					l %= 57;
 				}
 			}
 		}
