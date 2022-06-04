@@ -18,8 +18,9 @@ int main(void)
 		{
 			for (k = i; k < 58; k++)
 			{
-				for (l = j + 1; l < 58; l++)
+				for (m = 0; m < 10; m++)
 				{
+					l = j + 1;
 					if (i == k && j == l)
 					{
 						continue;
@@ -33,6 +34,8 @@ int main(void)
 						break;
 					putchar(',');
 					putchar(' ');
+					l += 1;
+					l %= 57;
 				}
 			}
 		}
