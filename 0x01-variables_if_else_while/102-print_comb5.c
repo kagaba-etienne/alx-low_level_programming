@@ -32,6 +32,10 @@ int main(void)
 						putchar(k);
 						putchar(l);
 					}
+					else
+					{
+						continue;
+					}
 					if (i == 57 && j == 56)
 						break;
 					putchar(',');
