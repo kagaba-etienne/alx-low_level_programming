@@ -14,7 +14,7 @@ int main(void)
 	for (b = 0; b < 26; b--)
 	{
 		putchar(a);
-		a++;
+		a--;
 	}
 	putchar('\n');
 	return (0);
