@@ -7,7 +7,7 @@
  *
  * Return: 0 and 1
  */
-int _islower(int c);
+int _islower(int c)
 {
 	return (islower(c));
 }
