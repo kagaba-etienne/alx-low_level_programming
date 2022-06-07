@@ -1,12 +1,13 @@
-#include<stdio.h>
+#include<ctype.h>
+#include "main.h"
 
 /**
- * main - entry point
+ * _islower - entry point
+ *@c: parameter for checking
  *
- * Return: always zero
+ * Return: 0 and 1
  */
-int main(void)
+int _islower(int c);
 {
-	printf("_putchar");
-	return (0);
+	return (islower(c));
 }
