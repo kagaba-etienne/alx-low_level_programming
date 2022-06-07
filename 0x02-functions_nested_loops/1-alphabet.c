@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include "main.h"
 /**
  * print_alphabet - fuction for alphabets
@@ -10,11 +9,13 @@ void print_alphabet(void)
 	char a;
 	int i;
 
+	a = 'a';
 	for (i = 0; i < 26; i++)
 	{
-		putchar(a);
+		_putchar(a);
 		a++;
 	}
+	_putchar('\n');
 }
 
 /**
