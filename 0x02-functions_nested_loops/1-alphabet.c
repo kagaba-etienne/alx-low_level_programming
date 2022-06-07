@@ -1,10 +1,6 @@
 #include<stdio.h>
-#include<main.h>
+#include"main.h"
 /**
- * main - entry point
- *
- * Return: always zero 
- *
  * print_alphabet - fuction for alphabets
  *
  * Return: doe ont return anything
@@ -20,6 +16,12 @@ void print_alphabet(void)
 		a++;
 	}
 }
+
+/**
+ * main - entry
+ *
+ * Return: always zero
+ */
 
 int main(void)
 {
