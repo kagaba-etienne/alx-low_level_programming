@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * print_sign - entry
+ *@n: for to check sign
  *
  * Return: 0, 1 and -1
  */
