@@ -3,7 +3,7 @@
  * print_to_98 - to 98
  * @n: starting value
  *
- * Return: always 0
+ * Return: always void
  */
 void print_to_98(int n)
 {
@@ -19,5 +19,4 @@ void print_to_98(int n)
 		}
 	}
 	_putchar('\n');
-	return (0);
 }
