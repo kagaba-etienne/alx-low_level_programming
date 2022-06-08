@@ -2,7 +2,7 @@
 /**
  * jack_bauer - every minute
  *
- * Return: always zero
+ * Return: always nothing
  */
 void jack_bauer(void)
 {
@@ -30,5 +30,4 @@ void jack_bauer(void)
 			}
 		}
 	}
-	return (0);
 }
