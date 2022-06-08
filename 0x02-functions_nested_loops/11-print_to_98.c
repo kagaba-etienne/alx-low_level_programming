@@ -7,8 +7,7 @@
  */
 void print_to_98(int n)
 {
-	while (n != 98)
-	{
+	do {
 		if (n > 100)
 		{
 			_putchar((n / 100) + '0');
@@ -42,6 +41,6 @@ void print_to_98(int n)
 		}
 		_putchar(',');
 		_putchar(' ');
-	}
+	} while (n != 98);
 	_putchar('\n');
 }
