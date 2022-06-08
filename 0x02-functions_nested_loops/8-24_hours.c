@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
  * jack_bauer - every minute
  *
@@ -19,6 +19,8 @@ void jack_bauer(void)
 					_putchar(k);
 					_putchar(l);
 					_putchar('\n');
+					if (a == 2 && j == 3 && k == 5 && l == 9)
+						break;
 				}
 			}
 		}
