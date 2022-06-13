@@ -13,6 +13,8 @@ void puts_half(char *str)
 
 	b = strlen(str);
 	n = b / 2;
+	if (b % 2 == 1)
+		n += 1;
 	for (j = n; j < b; j++)
 		_putchar(str[j]);
 	_putchar('\n');
