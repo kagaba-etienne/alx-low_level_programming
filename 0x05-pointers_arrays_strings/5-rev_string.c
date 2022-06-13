@@ -7,7 +7,6 @@
  */
 void rev_string(char *s)
 {
-	int *a;
 	int b;
 	int j;
 	int temp;
@@ -15,8 +14,8 @@ void rev_string(char *s)
 	b = strlen(s);
 	for (j = 0; j < b / 2; j++)
 	{
-		temp = *(a + j);
-		*(a + j) = *(a + b - 1 - j);
-		*(a + b - 1 - j) = temp;
+		temp = *(s + j);
+		*(s + j) = *(s + b - 1 - j);
+		*(s + b - 1 - j) = temp;
 	}
 }
