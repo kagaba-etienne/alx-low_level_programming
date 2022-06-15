@@ -9,5 +9,5 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	return (strnpcy(dest, src, n));
+	return (strncpy(dest, src, n));
 }
