@@ -1,20 +1,19 @@
 #include "main.h"
 /**
  * string_toupper - changes lowercase to uppercase
- * @str: string with characters
+ * @s: string with characters
  *
  * Return: character
  */
-char *string_toupper(char *str)
+char *string_toupper(char *s)
 {
-	int n;
 	int i;
 
-	n = sizeof(str) / sizeof(char);
-	for (i = 0; i < n; i++)
+	i = 0;
+	while (*(s + i))
 	{
-		if (islower(str[i]))
-			toupper(str[i]);
+		*(s + i) = toupper(*(s + i));
+		i++;
 	}
-	return (str);
+	return (s);
 }
