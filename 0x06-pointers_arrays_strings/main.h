@@ -10,3 +10,4 @@ char *cap_string(char *);
 char *leet(char *);
 #include<ctype.h>
 #include<stddef.h>
+int _putchar(char c);
