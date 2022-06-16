@@ -7,22 +7,20 @@
  */
 char *leet(char *str)
 {
-	char *a;
-	int *b;
-	int n;
+	char a[5] = {'A', 'E', 'O', 'T', 'L'};
+	char b[5] = {'4', '3', '0', '7', '1'};
 	int i;
 	int j;
 
-	a = {A, E, O, T, L};
-	n = sizeof(str) / sizeof(char);
-	b = {4, 3, 0, 7, 1};
-	for (j = 0; j < n; j++)
+	j = 0;
+	while (str[j])
 	{
 		for (i = 0; i < 5; i++)
 		{
-			if (str[j] == a[i] || str[j] == tolower(a[i]))
+			if (toupper(str[j]) == a[i])
 				str[j] = b[i];
 		}
+		j++;
 	}
 	return (str);
 }
