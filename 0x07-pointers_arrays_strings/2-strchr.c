@@ -21,7 +21,11 @@ char *_strchr(char *s, char c)
 		{
 			return (NULL);
 		}
-		i++;
+		else
+		{
+			i++;
+			continue;
+		}
 	}
 	return (s + i);
 }
