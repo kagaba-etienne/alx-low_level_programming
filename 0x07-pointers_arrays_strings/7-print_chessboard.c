@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 #include <string.h>
 /**
  * print_chessboard - prints chessboard
