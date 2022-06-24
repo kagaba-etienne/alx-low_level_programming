@@ -17,6 +17,6 @@ return (1);
 }
 first_int = strtol(argv[1], NULL, 10);
 second_int = strtol(argv[2], NULL, 10);
-printf("%ld\n", first_int * second_int);
+printf("%ld\n", first_int *second_int);
 return (0);
 }
